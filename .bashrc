@@ -19,8 +19,7 @@ local CYAN="\[\033[0;36m\]"
 local CYANBOLD="\[\033[1;36m\]"
 local WHITE="\[\033[0;37m\]"
 local WHITEBOLD="\[\033[1;37m\]"
-
-export PS1="$WHITE\u@\h \@ $CYAN\w$YELLOW$(parse_git_branch)\[\033[00m\]: "
+export PROMPT_COMMAND="PS1=\"$GREEN\u$WHITE@\h $RED\@ $CYAN\w$YELLOW\$(parse_git_branch)\[\033[00m\]: \""
 }
 
 bash_scheme
@@ -30,7 +29,3 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local
 export RBENV_ROOT=/usr/local/var/rbenv
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-say -v Vicki -r 200 "welcome back"
-
-source ~/git-completion.bash
