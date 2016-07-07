@@ -28,4 +28,6 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local
 
 export RBENV_ROOT=/usr/local/var/rbenv
 
+export EDITOR='vim'
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
